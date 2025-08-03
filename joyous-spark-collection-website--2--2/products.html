@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Joyous Spark Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Joyous Spark Collection</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://wa.me/+2348039382985" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="products-hero-container">
+            <h1 class="products-title">Our Complete Collection</h1>
+            <p class="products-subtitle">Discover the perfect pair for every occasion and style</p>
+        </div>
+    </section>
+
+    <!-- Full Products Collection -->
+    <section class="full-products">
+        <div class="products-container">
+            <div class="products-grid">
+                <!-- Formal Collection -->
+                <div class="product-category">
+                    <h3 class="category-title">Formal Collection</h3>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0042.jpg" alt="Oxford Professional">
+                            <h3>Oxford Professional</h3>
+                            <p>Classic black leather oxfords for business</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0031.jpg" alt="Brogue Elegance">
+                            <h3>Brogue Elegance</h3>
+                            <p>Handcrafted brogues with intricate detailing</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0062.jpg" alt="Executive Heels">
+                            <h3>Executive Heels</h3>
+                            <p>Professional heels for the modern woman</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Casual Collection -->
+                <div class="product-category">
+                    <h3 class="category-title">Casual Collection</h3>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0081.jpg" alt="Weekend Loafers">
+                            <h3>Weekend Loafers</h3>
+                            <p>Comfortable slip-ons for casual days</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0028.jpg" alt="Canvas Classics">
+                            <h3>Canvas Classics</h3>
+                            <p>Timeless canvas sneakers with modern comfort</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0067.jpg" alt="Urban Boots">
+                            <h3>Urban Boots</h3>
+                            <p>Versatile leather boots for city adventures</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- Luxury Collection -->
+                <div class="product-category">
+                    <h3 class="category-title">Luxury Collection</h3>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0080.jpg" alt="Designer Stilettos">
+                            <h3>Designer Stilettos</h3>
+                            <p>Slide into pure indulgence with our Handcrafted Luxury palms </p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0072.jpg" alt="Italian Crafted">
+                            <h3>Casual Crocs</h3>
+                            <p>Experience a new era of comfort with crocs</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="IMG-20250729-WA0037.jpg" alt="Evening Elegance">
+                            <h3>Evening Elegance</h3>
+                            <p>Designed for the most distinguished occasions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Joyous Spark Signature</h3>
+                    <p>Premium footwear crafted with passion since 2011.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="https://wa.me/+2348039382985">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: allisonjoy32@gmail.com</p>
+                    <p>Phone: +2348039382985</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Joyous Spark Signature. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
